@@ -233,6 +233,7 @@ p {
     display: block;
     width: 15rem;
     margin-bottom: 1rem;
+    filter: grayscale(100%);
   }
   .project-title {
     text-transform: capitalize;
@@ -257,6 +258,10 @@ p {
   background-color: white;
   scale: 1.05;
   transition: all 1s ease-in-out;
+  img {
+    transition: all 1s ease-in-out;
+    filter: grayscale(0);
+  }
 }
 .project-technology-container {
   display: flex;
