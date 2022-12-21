@@ -132,6 +132,34 @@ a:hover {
   text-align: center;
 }
 
+@media screen and (min-width: 800px) {
+  .navigation {
+    position: fixed;
+    top: -1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 10;
+    width: 100%;
+    background-color: white;
+    text-transform: capitalize;
+    color: var(--color-text) !important;
+    text-align: center;
+    height: 5rem;
+  }
+  .navigation .menu-icon {
+    font-size: 0rem;
+    color: var(--color-text);
+    padding: 0 4rem;
+    visibility: hidden;
+  }
+  .nav-link p {
+    margin: 0;
+    font-size: 1.25rem;
+    color: var(--color-text);
+  }
+}
 .menu-icon {
   font-size: 1.5rem;
   color: var(--color-text);
