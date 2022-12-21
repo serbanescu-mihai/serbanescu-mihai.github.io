@@ -159,6 +159,9 @@ a:hover {
     font-size: 1.25rem;
     color: var(--color-text);
   }
+  .nav-link p:hover {
+    color: orange;
+  }
 }
 .menu-icon {
   font-size: 1.5rem;
