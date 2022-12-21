@@ -223,4 +223,76 @@ p {
 .contact .section-container a :hover,
 .contact .section-container a :hover p {
   color: orange;
+  scale: 1.05;
+  transition: all 1s ease-in-out;
+}
+
+.project-container {
+  max-width: 18rem;
+  padding: 1.5rem;
+}
+.project-container img {
+  display: block;
+  width: 15rem;
+  margin-bottom: 1rem;
+}
+.project-container .project-title {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: darkorange;
+}
+.project-container .project-description {
+  font-size: 1rem;
+}
+.project-container a {
+  color: orange;
+  font-size: 1rem;
+  display: block;
+  padding: 0.5rem 0;
+}
+.project-container a:hover {
+  text-decoration: underline;
+}
+
+.project-container:hover {
+  background-color: white;
+  scale: 1.05;
+  transition: all 1s ease-in-out;
+}
+
+.project-technology-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.individual-technology {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  min-width: 25%;
+}
+.individual-technology p {
+  font-size: 0.75rem;
+}
+
+.social-links a p {
+  font-size: 1rem;
+  line-height: 0.5rem;
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .social-links a p {
+    font-size: 1.5rem;
+    line-height: 0.75rem;
+    padding-right: 2rem;
+  }
+}
+.social-links a:hover p {
+  color: orange;
 }/*# sourceMappingURL=style.css.map */

@@ -219,7 +219,74 @@ p {
       :hover,
       :hover p {
         color: orange;
+        scale: 1.05;
+        transition: all 1s ease-in-out;
       }
     }
   }
+}
+
+.project-container {
+  max-width: 18rem;
+  padding: 1.5rem;
+  img {
+    display: block;
+    width: 15rem;
+    margin-bottom: 1rem;
+  }
+  .project-title {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: darkorange;
+  }
+  .project-description {
+    font-size: 1rem;
+  }
+  a {
+    color: orange;
+    font-size: 1rem;
+    display: block;
+    padding: 0.5rem 0;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+.project-container:hover {
+  background-color: white;
+  scale: 1.05;
+  transition: all 1s ease-in-out;
+}
+.project-technology-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.individual-technology {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  p {
+    font-size: 0.75rem;
+  }
+  min-width: 25%;
+}
+.social-links a p {
+  font-size: 1rem;
+  line-height: 0.5rem;
+  display: inline-block;
+  padding-right: 1rem;
+}
+@media screen and (min-width: 800px) {
+  .social-links a p {
+    font-size: 1.5rem;
+    line-height: 0.75rem;
+    padding-right: 2rem;
+  }
+}
+.social-links a:hover p {
+  color: orange;
 }
