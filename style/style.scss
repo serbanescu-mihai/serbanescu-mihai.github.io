@@ -97,6 +97,60 @@ p {
 .section {
   padding-bottom: 5rem;
   min-height: 100vh;
+  // display: flex;
+}
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url(../images/code.jpg) center/cover no-repeat;
+  padding-top: 10rem;
+  padding-left: 5rem;
+  p {
+    font-size: 2rem;
+    line-height: 2rem;
+    color: white;
+    span {
+      font-weight: bold;
+      font-size: 2.5rem;
+      color: orange;
+    }
+  }
+}
+@media screen and (min-width: 800px) {
+  .header {
+    padding-top: 15rem;
+    padding-left: 20rem;
+    p {
+      font-size: 3.5rem;
+      line-height: 3rem;
+      color: white;
+      span {
+        font-weight: bold;
+        font-size: 4rem;
+        color: orange;
+      }
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  background-color: var(--color-text);
+  color: var(--color-background);
+  font-size: 0.75rem;
+  p {
+    margin: 0;
+    display: block;
+  }
+}
+
+.underline {
+  margin: 0 auto;
+  height: 0.25rem;
+  background-color: var(--color-text);
+  max-width: 50%;
 }
 
 .links a {
@@ -112,5 +166,60 @@ p {
   h2 {
     text-align: center;
     padding-top: 5rem;
+  }
+}
+
+.section-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 5rem;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+}
+@media screen and (min-width: 800px) {
+  .section-container {
+    flex-direction: row;
+    width: 80%;
+  }
+}
+
+.technology-item {
+  // flex: 33%;
+  margin: auto;
+  padding: 2rem;
+  flex-basis: 25%;
+  img {
+    width: 10rem;
+    height: 10rem;
+    display: block;
+    background: center/cover;
+    margin: auto;
+  }
+  p {
+    text-align: center;
+    padding-top: 1rem;
+  }
+}
+.contact {
+  .section-container {
+    a {
+      display: block !important;
+      color: grey;
+      text-align: center;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      p {
+        i {
+          display: block;
+          padding-bottom: 1rem;
+        }
+      }
+      :hover,
+      :hover p {
+        color: orange;
+      }
+    }
   }
 }
