@@ -99,6 +99,40 @@ p {
   min-height: 100vh;
   // display: flex;
 }
+a {
+  display: block;
+}
+a:hover {
+  color: orange;
+}
+.navigation {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  // margin-bottom: 2rem;
+  z-index: 10;
+  width: 100%;
+  background-color: white;
+  padding: 1rem;
+  text-transform: capitalize;
+  color: var(--color-text) !important;
+  text-align: center;
+}
+.menu-icon {
+  font-size: 1.5rem;
+  color: var(--color-text);
+  // width: 2rem;
+  // height: 2rem;
+}
+.nav-link p {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--color-text);
+}
+
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
     url(../images/code.jpg) center/cover no-repeat;
