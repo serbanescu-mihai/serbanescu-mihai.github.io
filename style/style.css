@@ -373,4 +373,8 @@ a:hover {
 
 .individual-technology:hover {
   color: orange;
+}
+
+.project-link:hover .fa-arrow-right {
+  transform: translate(5px, 0);
 }/*# sourceMappingURL=style.css.map */
