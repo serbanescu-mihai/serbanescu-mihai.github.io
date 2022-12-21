@@ -1,22 +1,116 @@
-// utility classes
-
-// section
-
-.section {
-  height: 100vh;
+/*
+=====
+Variable
+=====
+*/
+:root {
+  --color-background: lightgray;
+  --color-text: gray;
+  --ff-primary: sans-serif;
+  --ff-secondary: serif;
 }
 
-// navigation
-.navigation {
-  ul {
-    li {
-      display: inline-block;
-    }
+/*
+=====
+Global styles
+=====
+*/
+html {
+  scroll-behavior: smooth;
+}
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-primary);
+  background: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.5rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize;
+  line-height: 1.25rem;
+  margin-bottom: 1rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 0.85rem;
+}
+p {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  body {
+    font-size: 1.25rem;
   }
 }
 
-// for testing
-body {
-  //   color: red;
-  //   background-color: blue;
+/* section */
+.section {
+  padding-bottom: 5rem;
+  min-height: 100vh;
+}
+
+.links a {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  display: block;
+  font-weight: bold;
+  padding: 1rem 0;
+  background-color: white;
+  color: gray;
+}
+.section-title {
+  h2 {
+    text-align: center;
+    padding-top: 5rem;
+  }
 }
