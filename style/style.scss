@@ -298,6 +298,8 @@ a:hover {
 .project-container {
   max-width: 18rem;
   padding: 1.5rem;
+  margin: 0.75rem;
+  background-color: #dcdcdc;
   img {
     display: block;
     width: 15rem;
@@ -362,5 +364,8 @@ a:hover {
   }
 }
 .social-links a:hover p {
+  color: orange;
+}
+.individual-technology:hover {
   color: orange;
 }
