@@ -369,7 +369,8 @@ a:hover {
 }
 .social-links a:hover p {
   color: orange;
-  scale: 1.1;
+  scale: 1.05;
+  transition: all 1s ease-in-out;
 }
 
 .individual-technology:hover {
