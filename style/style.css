@@ -381,6 +381,6 @@ a:hover {
 }
 
 .section-container .technology-item:hover {
-  transform: translate(0, -3rem);
+  transform: translate(0, -2.5rem);
   transition: all 1s ease-in-out;
 }/*# sourceMappingURL=style.css.map */
