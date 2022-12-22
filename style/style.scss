@@ -271,6 +271,7 @@ a:hover {
     padding-top: 1rem;
   }
 }
+
 .contact {
   .section-container {
     a {
@@ -376,4 +377,9 @@ a:hover {
   .fa-arrow-right {
     transform: translate(5px, 0);
   }
+}
+
+.section-container .technology-item:hover {
+  transform: translate(0, -3rem);
+  transition: all 1s ease-in-out;
 }
