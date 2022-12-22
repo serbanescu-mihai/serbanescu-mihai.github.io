@@ -4,8 +4,10 @@ Variable
 =====
 */
 :root {
-  --color-background: lightgray;
-  --color-text: gray;
+  --color-primary-light: lightgray;
+  --color-primary-dark: gray;
+  --color-highlight: orange;
+  --color-accent: white;
   --ff-primary: sans-serif;
   --ff-secondary: serif;
 }
@@ -27,8 +29,8 @@ html {
 }
 body {
   font-family: var(--ff-primary);
-  background: var(--color-background);
-  color: var(--color-text);
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
   line-height: 1.5rem;
 }
 
@@ -38,6 +40,7 @@ ul {
 
 a {
   text-decoration: none;
+  display: block;
 }
 img {
   display: block;
@@ -99,11 +102,8 @@ p {
   min-height: 100vh;
   // display: flex;
 }
-a {
-  display: block;
-}
 a:hover {
-  color: orange;
+  color: var(--color-highlight);
 }
 .navigation {
   position: fixed;
@@ -115,10 +115,10 @@ a:hover {
   // margin-bottom: 2rem;
   z-index: 10;
   width: 100%;
-  background-color: white;
+  background-color: var(--color-accent);
   padding: 1rem;
   text-transform: capitalize;
-  color: var(--color-text) !important;
+  color: var(--color-primary-dark) !important;
   text-align: center;
 }
 @media screen and (min-width: 800px) {
@@ -132,15 +132,15 @@ a:hover {
     // margin-bottom: 2rem;
     z-index: 10;
     width: 100%;
-    background-color: white;
+    background-color: var(--color-accent);
     // padding: 1rem;
     text-transform: capitalize;
-    color: var(--color-text) !important;
+    color: var(--color-primary-dark) !important;
     text-align: center;
     height: 5rem;
     .menu-icon {
       font-size: 0rem;
-      color: var(--color-text);
+      color: var(--color-primary-dark);
       padding: 0 4rem;
       // width: 2rem;
       // height: 2rem;
@@ -150,22 +150,22 @@ a:hover {
   .nav-link p {
     margin: 0;
     font-size: 1.25rem;
-    color: var(--color-text);
+    color: var(--color-primary-dark);
   }
   .nav-link p:hover {
-    color: orange;
+    color: var(--color-highlight);
   }
 }
 .menu-icon {
   font-size: 1.5rem;
-  color: var(--color-text);
+  color: var(--color-primary-dark);
   // width: 2rem;
   // height: 2rem;
 }
 .nav-link p {
   margin: 0;
   font-size: 0.75rem;
-  color: var(--color-text);
+  color: var(--color-primary-dark);
 }
 
 .header {
@@ -176,11 +176,11 @@ a:hover {
   p {
     font-size: 2rem;
     line-height: 2rem;
-    color: white;
+    color: var(--color-accent);
     span {
       font-weight: bold;
       font-size: 2.5rem;
-      color: orange;
+      color: var(--color-highlight);
     }
   }
 }
@@ -191,11 +191,11 @@ a:hover {
     p {
       font-size: 3.5rem;
       line-height: 3rem;
-      color: white;
+      color: var(--color-accent);
       span {
         font-weight: bold;
         font-size: 4rem;
-        color: orange;
+        color: var(--color-highlight);
       }
     }
   }
@@ -206,8 +206,8 @@ a:hover {
   align-items: center;
   justify-content: center;
   height: 5rem;
-  background-color: var(--color-text);
-  color: var(--color-background);
+  background-color: var(--color-primary-dark);
+  color: var(--color-primary-light);
   font-size: 0.75rem;
   p {
     margin: 0;
@@ -218,7 +218,7 @@ a:hover {
 .underline {
   margin: 0 auto;
   height: 0.25rem;
-  background-color: var(--color-text);
+  background-color: var(--color-primary-dark);
   max-width: 50%;
 }
 
@@ -228,7 +228,7 @@ a:hover {
   display: block;
   font-weight: bold;
   padding: 1rem 0;
-  background-color: white;
+  background-color: var(--color-accent);
   color: gray;
 }
 .section-title {
@@ -275,7 +275,7 @@ a:hover {
   .section-container {
     a {
       display: block !important;
-      color: grey;
+      color: var(--color-primary-dark);
       text-align: center;
       margin-bottom: 2rem;
       padding: 1rem;
@@ -287,7 +287,7 @@ a:hover {
       }
       :hover,
       :hover p {
-        color: orange;
+        color: var(--color-highlight);
         scale: 1.05;
         transition: all 1s ease-in-out;
       }
@@ -316,7 +316,7 @@ a:hover {
     font-size: 1rem;
   }
   a {
-    color: orange;
+    color: var(--color-highlight);
     font-size: 1rem;
     display: block;
     padding: 0.5rem 0;
@@ -326,7 +326,7 @@ a:hover {
   }
 }
 .project-container:hover {
-  background-color: white;
+  background-color: var(--color-accent);
   scale: 1.05;
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.4);
   transition: all 1s ease-in-out;
@@ -365,7 +365,7 @@ a:hover {
   }
 }
 .social-links a:hover p {
-  color: orange;
+  color: var(--color-highlight);
   scale: 1.05;
   transition: all 1s ease-in-out;
 }
