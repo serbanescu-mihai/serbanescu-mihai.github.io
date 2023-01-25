@@ -274,12 +274,14 @@ a:hover {
 
 .contact {
   .section-container {
+    flex-direction: row;
     a {
       display: block !important;
       color: var(--color-primary-dark);
       text-align: center;
       margin-bottom: 2rem;
       padding: 1rem;
+
       p {
         i {
           display: block;
@@ -336,6 +338,11 @@ a:hover {
     filter: grayscale(0);
   }
 }
+.technology {
+  .section-container {
+    flex-direction: row;
+  }
+}
 .project-technology-container {
   display: flex;
   flex-wrap: wrap;
@@ -382,4 +389,44 @@ a:hover {
 .section-container .technology-item:hover {
   transform: translate(0, -2.5rem);
   transition: all 1s ease-in-out;
+}
+
+.contact-form {
+  * {
+    margin: auto;
+  }
+  width: 100%;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: auto;
+  margin: auto;
+  label,
+  input,
+  textarea {
+    display: block;
+    width: 20rem;
+  }
+  label {
+    padding-top: 1rem;
+  }
+  input {
+    height: 2.5rem;
+    padding: 1rem;
+  }
+  textarea {
+    height: 10rem;
+    padding: 1rem;
+  }
+  button {
+    border: 0;
+    background-color: darkorange;
+    padding: 1rem;
+    color: white;
+    margin-top: 1rem;
+    width: 20rem;
+    cursor: pointer;
+  }
 }
