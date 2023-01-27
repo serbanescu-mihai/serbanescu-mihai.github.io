@@ -19,8 +19,6 @@ Global styles
 */
 html {
   scroll-behavior: smooth;
-  -ms-scroll-chaining: none;
-      overscroll-behavior: none;
 }
 
 *,
