@@ -173,9 +173,21 @@ a:hover {
     url(../images/code.jpg) center/cover no-repeat;
   padding-top: 10rem;
   padding-left: 5rem;
+  h1 {
+    font-size: 3rem !important;
+    line-height: 4rem !important;
+    color: var(--color-accent);
+    position: relative;
+    text-transform: uppercase;
+    span {
+      font-weight: bold;
+      font-size: 3.5rem;
+      color: var(--color-highlight);
+    }
+  }
   p {
     font-size: 2rem;
-    line-height: 2rem;
+    line-height: 2rem !important;
     color: var(--color-accent);
     span {
       font-weight: bold;
