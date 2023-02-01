@@ -179,19 +179,18 @@ a:hover {
   padding-left: 5rem;
 }
 .header h1 {
-  font-size: 3rem !important;
-  line-height: 4rem !important;
+  font-size: 2em !important;
+  line-height: 1.5em !important;
   color: var(--color-accent);
   position: relative;
   text-transform: uppercase;
 }
 .header h1 span {
   font-weight: bold;
-  font-size: 3.5rem;
   color: var(--color-highlight);
 }
 .header p {
-  font-size: 2rem;
+  font-size: 1rem;
   line-height: 2rem !important;
   color: var(--color-accent);
 }
