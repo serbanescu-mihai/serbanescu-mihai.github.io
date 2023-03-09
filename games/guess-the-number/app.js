@@ -38,28 +38,34 @@ guess.addEventListener("click", () => {
 // guess.focus();
 
 checkBtn.addEventListener("click", () => {
-  if (!guess.value) {
-    message.textContent = "⚠️ You did not imput a number";
-  } else {
-    if (Number(guess.value) === randomNumber) {
-      message.textContent = "🎉 Congratulations! You have guessed the number!";
-      number.textContent = guess.value;
-      number.style.width = "10rem";
-      container.style.backgroundColor = "#00ff6c";
-      checkBtn.classList.add("hidden");
-      if (currentScore > currentHighscore) {
-        currentHighscore = currentScore;
-        highscore.textContent = currentHighscore;
+  if (currentScore > 0) {
+    if (!guess.value) {
+      message.textContent = "⚠️ You did not imput a number";
+    } else {
+      if (Number(guess.value) === randomNumber) {
+        message.textContent =
+          "🎉 Congratulations! You have guessed the number!";
+        number.textContent = guess.value;
+        number.style.width = "10rem";
+        container.style.backgroundColor = "#00ff6c";
+        checkBtn.classList.add("hidden");
+        if (currentScore > currentHighscore) {
+          currentHighscore = currentScore;
+          highscore.textContent = currentHighscore;
+        }
+      } else if (Number(guess.value) > randomNumber) {
+        message.textContent = "Your guess is too high";
+        currentScore--;
+        score.textContent = currentScore;
+      } else if (Number(guess.value) < randomNumber) {
+        message.textContent = "Your guess is too low";
+        currentScore--;
+        score.textContent = currentScore;
       }
-    } else if (Number(guess.value) > randomNumber) {
-      message.textContent = "Your guess is too high";
-      currentScore--;
-      score.textContent = currentScore;
-    } else if (Number(guess.value) < randomNumber) {
-      message.textContent = "Your guess is too low";
-      currentScore--;
-      score.textContent = currentScore;
     }
+  } else {
+    message.textContent = "You are out of lives. You lose.";
+    container.style.backgroundColor = "red";
   }
 });
 
