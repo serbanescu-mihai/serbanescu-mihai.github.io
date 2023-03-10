@@ -95,7 +95,7 @@ holdDice.addEventListener("click", () => {
     document.querySelector(`.total-score-${activePlayer}`).textContent =
       scores[activePlayer];
 
-    if (scores[activePlayer] > 100) {
+    if (scores[activePlayer] >= 100) {
       playing = false;
       document.querySelector(`.player-${activePlayer}`).classList.add("winner");
       document
