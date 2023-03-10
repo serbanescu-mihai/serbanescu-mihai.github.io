@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>PIG (2 dice)</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="button-container">
+        <button class="play-again">Play again</button>
+        <button class="how-to-play">How to play</button>
+      </section>
+
+      <h1 class="game-name">PIG (2 dice)</h1>
+
+      <div class="number">
+        <img class="dice hidden dice1" src="images/dice-1.png" alt="" />
+        <img class="dice hidden dice2" src="images/dice-1.png" alt="" />
+      </div>
+      <div class="controls">
+        <button class="control-btn roll">🎲 Roll dice</button>
+        <button class="control-btn hold">Hold</button>
+      </div>
+      <article class="game-container"></article>
+      <section class="game">
+        <section class="left player-0 player-active">
+          <h2 class="player-name" contenteditable="true">✏️ Player 1</h2>
+          <p>Current score</p>
+          <p class="current-score-0">0</p>
+          <p>Total score</p>
+          <p class="total-score-0">0</p>
+        </section>
+        <section class="right player-1">
+          <h2 class="player-name" contenteditable="true">✏️ Player 2</h2>
+          <p>Current score</p>
+          <p class="current-score-1">0</p>
+          <p>Total score</p>
+          <p class="total-score-1">0</p>
+        </section>
+      </section>
+    </main>
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1>How to play Pig 2 dice game</h1>
+      <p>
+        Pig is a simple dice game first described in print by John Scarne in
+        1945. Players take turns to roll a single dice as many times as they
+        wish, adding all roll results to a running total, but losing their
+        gained score for the turn if they roll a 1.
+      </p>
+      <p>Gameplay</p>
+      <div>
+        <p>
+          Each turn, a player repeatedly rolls a die until either a 1 is rolled
+          or the player decides to "hold":
+        </p>
+        <ul>
+          <li>
+            If the player rolls a 1, they score nothing and it becomes the next
+            player's turn.
+          </li>
+          <li>
+            If the player rolls any other number, it is added to their turn
+            total and the player's turn continues.
+          </li>
+          <li>
+            If a player chooses to "hold", their turn total is added to their
+            score, and it becomes the next player's turn.
+          </li>
+        </ul>
+        <p>The first player to score 100 or more points wins.</p>
+        <p>If a player rolls double 1 their total score goes back to 0</p>
+        <p>
+          If a player rolls a double other than double 1 the multiplication of
+          the numbers gets added to their score (for example double 3 = 9,
+          double 4 = 16, double 5 = 25)
+        </p>
+        <p>
+          For example, the first player, Donald, begins a turn with a roll of 5.
+          Donald could hold and score 5 points, but chooses to roll again.
+          Donald rolls a 2, and could hold with a turn total of 7 points, but
+          chooses to roll again. Donald rolls a 1, and must end his turn without
+          scoring. The next player, Alexis, rolls the sequence 4-5-3-5-6, after
+          which she chooses to hold, and adds her turn total of 23 points to her
+          score.
+        </p>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
