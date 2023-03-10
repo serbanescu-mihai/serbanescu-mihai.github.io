@@ -162,6 +162,7 @@ holdDice.addEventListener("click", () => {
         .classList.remove("player-active");
       dice1.classList.add("hidden");
       dice2.classList.add("hidden");
+      dice3.classList.add("hidden");
     } else {
       switchPlayer();
     }
